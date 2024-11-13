@@ -4,21 +4,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID",  23861777)
-    API_HASH  = os.environ.get("API_HASH", "16104c9a6a05c337237819a218d46c5d)
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7571567262:AAHL5yJe6CBQ8cM89FPx3AwsfmKFarwj9NI")
+    API_ID    = os.environ.get("API_ID",  )
+    API_HASH  = os.environ.get("API_HASH", ")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Zoro")
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://patelbhart45y666:yUY67YQZis7FS1op@cluster0.zsmsb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    DB_URL  = os.environ.get("")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/19ce648e7f374d7e2ba30-3035a4b2bee16c632b.jpg")
+    START_PIC   = os.environ.get("START_PIC", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6672752177 7037907648]
-    FORCE_SUB_1 = os.environ.get("FORCE_SUB_1", "omniscient_reader_view_poinnt")
+    FORCE_SUB_1 = os.environ.get("FORCE_SUB_1", "")
     FORCE_SUB_2 = os.environ.get("FORCE_SUB_2", "")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001907249407))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ))
     DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1001907249407"))
 
     # wes response configuration     
